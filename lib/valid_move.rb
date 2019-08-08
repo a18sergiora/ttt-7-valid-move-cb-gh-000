@@ -1,3 +1,7 @@
+puts "Welcome to Tic Tac Toe"
+puts "Input:"
+input = gets.strip
+
 # code your #valid_move? method here
 
 
