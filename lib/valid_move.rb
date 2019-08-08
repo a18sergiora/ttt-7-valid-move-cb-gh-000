@@ -3,7 +3,13 @@ puts "Input:"
 input = gets.strip
 
 # code your #valid_move? method here
-
+def valid_move?(input)
+  if position_taken?(board,input-1) && input.between?(0,8)
+    return true
+  else
+    return false
+  end
+end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 board = ["", " ", " ", " ", " ", " ", " ", " ", " "]
