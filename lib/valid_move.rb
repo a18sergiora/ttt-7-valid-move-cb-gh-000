@@ -2,6 +2,7 @@ puts "Welcome to Tic Tac Toe"
 puts "Input:"
 input = gets.strip
 
+board = ["", " ", " ", " ", " ", " ", " ", " ", " "]
 # code your #valid_move? method here
 def valid_move?(input)
   if position_taken?(board,input-1) && input.between?(0,8)
@@ -12,7 +13,7 @@ def valid_move?(input)
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-board = ["", " ", " ", " ", " ", " ", " ", " ", " "]
+
 
 
 def position_taken?(board,index)
